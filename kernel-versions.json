@@ -8,8 +8,8 @@
   "bpf/bpf-next": {
     "repo": "https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git",
     "branch": "master",
-    "commitHash": "7042882abc04c720ea798198981943502f4221fe",
-    "lastModified": 1740070567
+    "commitHash": "f28214603dc6c09b3b5e67b1ebd5ca83ad943ce3",
+    "lastModified": 1741489198
   },
   "stable/linux-rolling-stable": {
     "repo": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
