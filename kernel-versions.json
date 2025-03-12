@@ -1,7 +1,7 @@
 {
   "sched_ext/for-next": {
-    "repo": "https://git.kernel.org/pub/scm/linux/kernel/git/tj/sched_ext.git",
-    "branch": "for-next",
+    "repo": "https://github.com/JakeHillion/linux.git",
+    "branch": "breaking-kernel-build",
     "commitHash": "108963bba0853dc389177b12773f7e3b24308b7c",
     "lastModified": 1741489170
   },
