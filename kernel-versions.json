@@ -2,8 +2,8 @@
   "sched_ext/for-next": {
     "repo": "https://github.com/JakeHillion/linux.git",
     "branch": "breaking-kernel-build",
-    "commitHash": "108963bba0853dc389177b12773f7e3b24308b7c",
-    "lastModified": 1741489170
+    "commitHash": "0fed89a961ea851945d23cc35beb59d6e56c0964",
+    "lastModified": 1741798139
   },
   "bpf/bpf-next": {
     "repo": "https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git",
