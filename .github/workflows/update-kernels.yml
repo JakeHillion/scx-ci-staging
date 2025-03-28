@@ -69,7 +69,7 @@ jobs:
           else
             echo "PR already exists, skipping creation."
           fi
-          gh pr merge --auto
+          gh pr merge --auto --rebase
 
       - name: Build Nix kernels
         if: env.modified == 'true'
