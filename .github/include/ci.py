@@ -13,6 +13,7 @@ def run_command(
     cmd: List[str], check: bool = True, env: Optional[dict] = None
 ) -> subprocess.CompletedProcess:
     """Run a command and return the result."""
+    print("PATH = ", os.environ.get("PATH"))
     print(f"Running: {' '.join(cmd)}", flush=True)
     merged_env = os.environ.copy()
     if env:

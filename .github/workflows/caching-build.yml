@@ -19,12 +19,6 @@ jobs:
         if: ${{ runner.environment == 'github-hosted' }}
         uses: DeterminateSystems/nix-installer-action@main
 
-      - name: Cleanup GitHub Actions runner
-        if: ${{ runner.environment == 'github-hosted' }}
-        run: |
-          # rustup adds /home/runner/.cargo/env which overrides any other rust binaries
-          rustup self uninstall -y
-
       - uses: actions/checkout@v4
 
       - name: Load dependencies
