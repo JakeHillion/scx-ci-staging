@@ -82,6 +82,13 @@ jobs:
       # debugging purposes)
       - run: grep 'model name' /proc/cpuinfo | head -1
 
+      # Simulate a failure for scx_chaos on bpf/bpf-next kernel for testing
+      - name: Test failure simulation
+        if: matrix.scheduler.name == 'scx_chaos' && matrix.scheduler.kernel == 'bpf/bpf-next'
+        run: |
+          echo "Simulating failure for scx_chaos on bpf/bpf-next kernel"
+          exit 1
+
       # Test schedulers
       - run: meson compile -C build test_sched_${{ matrix.scheduler['name'] }}
       # this is where errors we want logs on start occurring, so always generate debug info and save logs
